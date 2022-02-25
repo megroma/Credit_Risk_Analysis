@@ -103,7 +103,7 @@ The following report uses statistical reasoning, and machine learning to assist 
 - The precision score for low-risk is 1.00.
 - The recall score for low-risk is 0.90.
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+
 ## Summary
 
 Summarize the results of the machine learning models, and 
@@ -117,6 +117,6 @@ Summarize the results of the machine learning models, and
 - EasyEnsembleClassifier had the highest low-risk recall at 0.90.
 - ClusterCentroidshad the lowest low-risk recall at 0.40.
 
-To have the best return on investment It would be more important to not loan to high risk rather than potentially reject a good loan. However there still needs to be enough good loans available. 
+To have the best return on investment It would be more important to not loan to those with high-risk credit rather than potentially rejecting someone with low-risk. However there still needs to be enough good loans available to have the best profit margin. 
 
-include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+With this in mind I would recommend the EasyEnsembleClassifier it has the highst balanced accuracy score, F1 score, high-risk recall as well as the highest low-risk recall. As the matrix shows only 7 of the actual high risk loans were accepted out of more than 15000. This would give an overall good return on the investment. 
