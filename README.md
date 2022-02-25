@@ -14,6 +14,11 @@ The following report uses statistical reasoning, and machine learning to assist 
 
 ![ROS ICR](https://user-images.githubusercontent.com/90511014/155633435-c699a314-5d54-45e2-a458-2d0e7aae827e.png)
 
+- The balanced accuracy score is 0.67.
+- The precision score for high-risk is 0.01.
+- The recall score for high-risk is 0.74.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.61.
 
 
 ### SMOTE
@@ -25,6 +30,12 @@ The following report uses statistical reasoning, and machine learning to assist 
 ![SMO ICR](https://user-images.githubusercontent.com/90511014/155633471-c42f85f2-b43a-4e59-9f09-db8670642572.png)
 
 
+- The balanced accuracy score is 0.66.
+- The precision score for high-risk is 0.01.
+- The recall score for high-risk is 0.63.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.69.
+
 ### ClusterCentroids
 
 ![CC BAS](https://user-images.githubusercontent.com/90511014/155633597-529c668b-9754-4355-bbeb-e6013d9793ce.png)
@@ -35,7 +46,11 @@ The following report uses statistical reasoning, and machine learning to assist 
 ![CC ICR](https://user-images.githubusercontent.com/90511014/155633586-3af8f1d7-c8ad-49e0-9ea8-15da03a7aff2.png)
 
 
-
+- The balanced accuracy score is 0.54.
+- The precision score for high-risk is 0.01.
+- The recall score for high-risk is 0.69.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.40.
 
 
 
@@ -49,7 +64,11 @@ The following report uses statistical reasoning, and machine learning to assist 
 
 ![EEN ICR](https://user-images.githubusercontent.com/90511014/155633645-a15c87bf-03e9-4657-857d-d2328f0bdda5.png)
 
-
+- The balanced accuracy score is 0.54.
+- The precision score for high-risk is 0.01.
+- The recall score for high-risk is 0.73.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.59.
 
 ### BalancedRandomForestClassifier
 
@@ -62,6 +81,11 @@ The following report uses statistical reasoning, and machine learning to assist 
 ![BRF ICR](https://user-images.githubusercontent.com/90511014/155633677-1e565f7a-9107-4b31-b739-0bed6a406418.png)
 
 
+- The balanced accuracy score is 0.79.
+- The precision score for high-risk is 0.03.
+- The recall score for high-risk is 0.70.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.87.
 
 
 
@@ -73,11 +97,26 @@ The following report uses statistical reasoning, and machine learning to assist 
 
 ![EEC ICR](https://user-images.githubusercontent.com/90511014/155633737-58844fa4-f591-43bc-8120-082214822dba.png)
 
-
+- The balanced accuracy score is 0.92.
+- The precision score for high-risk is 0.05.
+- The recall score for high-risk is 0.93.
+- The precision score for low-risk is 1.00.
+- The recall score for low-risk is 0.90.
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 ## Summary
 
 Summarize the results of the machine learning models, and 
+- EasyEnsembleClassifier had the highest balanced accuracy score at 0.92
+- SMOTEENN and ClusterCentroids had the lowest balanced accuracy score at 0.54.
+- EasyEnsembleClassifier had the highest high-risk precision at 0.05
+- The others except for BalancedRandomForestClassifier had the lowest high-risk precision at 0.01.
+- EasyEnsembleClassifier had the highest high-risk recall at 0.93.
+- SMOTE had the lowest high-risk recall at 0.63.
+- Each model had a the same low-risk precision score at 1.00.
+- EasyEnsembleClassifier had the highest low-risk recall at 0.90.
+- ClusterCentroidshad the lowest low-risk recall at 0.40.
+
+To have the best return on investment It would be more important to not loan to high risk rather than potentially reject a good loan. However there still needs to be enough good loans available. 
 
 include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
